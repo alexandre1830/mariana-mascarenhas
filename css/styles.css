@@ -1158,3 +1158,16 @@ fieldset { border: none; margin: 0; padding: 0; }
   .sobre-hero .two-col.narrow-img > figure { height: 100%; margin: 0; }
   .sobre-hero .two-col.narrow-img > figure .ph-photo { height: 100%; aspect-ratio: auto; }
 }
+
+/* Sobre hero — enquadramento da foto no mobile (evita imagem alongada/dominante).
+   Especificidade alta para vencer qualquer regra conflitante/em cache. */
+@media (max-width: 979px) {
+  .sobre-hero figure { margin: 0 auto; max-width: 420px; }
+  .sobre-hero figure .ph-photo {
+    aspect-ratio: 4 / 5;
+    height: auto;
+    object-fit: cover;
+    object-position: center 28%;
+    max-height: 70vh;
+  }
+}
