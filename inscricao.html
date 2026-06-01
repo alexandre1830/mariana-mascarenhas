@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pré-inscrição 2026 — Aulas de Inglês | Teacher Mari</title>
+  <meta name="description" content="Faça sua pré-inscrição para as aulas de inglês da Teacher Mari em 2026. Vagas limitadas. Preencha o formulário e a Mari entra em contato com você." />
+  <link rel="canonical" href="https://marimascarenhas.com.br/inscricao.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta name="robots" content="noindex, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pré-inscrição 2026 — Aulas de Inglês | Teacher Mari" />
+  <meta property="og:description" content="Vagas limitadas. Preencha o formulário e dê o primeiro passo rumo ao inglês." />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container measure">
+        <p class="eyebrow reveal">Pré-inscrição 2026</p>
+        <h1 class="reveal">Pré-inscrição <span class="title-block title-block--magenta">2026</span></h1>
+        <p class="lead reveal">Que alegria que você decidiu dar o primeiro passo rumo ao inglês! Preencha os campos abaixo e logo entrarei em contato. Vamos juntos?</p>
+        <p class="reveal"><span class="bonus-band" style="display:inline-flex"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg> As vagas são limitadas.</span></p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container form-wrap">
+        <div class="form-card reveal">
+
+          <!-- Estado de sucesso -->
+          <div class="form-success" id="form-success" role="status" aria-live="polite">
+            <div class="success-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <h2>Pré-inscrição recebida!</h2>
+            <p class="lead mx-auto">A Mari vai te responder em breve. Enquanto isso, que tal me seguir no Instagram?</p>
+            <a class="btn" href="https://instagram.com/teachermarimascarenhas" target="_blank" rel="noopener">Seguir @teachermarimascarenhas</a>
+          </div>
+
+          <!-- FORMULÁRIO
+               Formspree: defina FORM_ENDPOINT em js/main.js.
+               (Opcional Netlify: descomente name/data-netlify abaixo e veja o README.) -->
+          <form id="preinscricao" novalidate
+                method="POST"
+                action="#"
+                data-netlify="true"
+                netlify-honeypot="_gotcha">
+            <input type="hidden" name="form-name" value="preinscricao" />
+            <input type="hidden" name="_subject" value="Nova pré-inscrição — site Teacher Mari" />
+            <!-- honeypot anti-spam (não preencha) -->
+            <p class="honeypot" aria-hidden="true">
+              <label>Deixe este campo em branco: <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+            </p>
+
+            <!-- 1. Nome -->
+            <div class="field">
+              <label for="nome">Nome completo <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required aria-required="true" aria-describedby="err-nome" />
+              <span class="error-msg" id="err-nome">Por favor, informe seu nome completo.</span>
+            </div>
+
+            <!-- 2. Celular -->
+            <div class="field">
+              <label for="celular">Número de celular (com DDD) <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="celular" name="celular" inputmode="numeric" placeholder="(41) 99999-9999" autocomplete="tel" required aria-required="true" aria-describedby="err-celular" />
+              <span class="error-msg" id="err-celular">Informe um celular válido com DDD (10 ou 11 dígitos).</span>
+            </div>
+
+            <!-- 3. Rotina (checkboxes) -->
+            <div class="field">
+              <fieldset>
+                <legend class="fieldset-label">Selecione a melhor opção que se encaixa na sua rotina (pode escolher mais de uma): <span class="req" aria-hidden="true">*</span></legend>
+                <label class="option">
+                  <input type="checkbox" name="rotina" value="grupo" />
+                  <span>Mini grupo: segunda-feira, das 20:30 às 21:45</span>
+                </label>
+                <label class="option">
+                  <input type="checkbox" name="rotina" value="vip" />
+                  <span>Aulas VIP (individuais) — apenas manhã ou tarde</span>
+                </label>
+                <span class="error-msg" id="err-rotina">Escolha pelo menos uma opção.</span>
+              </fieldset>
+            </div>
+
+            <!-- 4. VIP condicional -->
+            <div class="field" id="vip-extra">
+              <label for="vipdetalhe">Caso tenha marcado “Aulas VIP”, escreva aqui qual seria a melhor possibilidade para você:</label>
+              <textarea id="vipdetalhe" name="vipdetalhe" placeholder="Ex.: manhãs de terça e quinta, por volta das 10h."></textarea>
+            </div>
+
+            <!-- 5. Ciência (radio) -->
+            <div class="field">
+              <fieldset>
+                <legend class="fieldset-label">Você declara estar ciente de que as vagas para estudar com a teacher Mari são limitadas e que, caso o dia/horário escolhido já esteja preenchido, você ficará na lista de espera? <span class="req" aria-hidden="true">*</span></legend>
+                <label class="option">
+                  <input type="radio" name="ciencia" value="sim" />
+                  <span>Sim, estou ciente.</span>
+                </label>
+                <span class="error-msg" id="err-ciencia">Confirme que está ciente para continuar.</span>
+              </fieldset>
+            </div>
+
+            <!-- 6. Motivo -->
+            <div class="field">
+              <!-- O ano "2026" é da campanha atual; edite aqui para a próxima turma. -->
+              <label for="motivo">Por que você decidiu estudar inglês em 2026? <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="motivo" name="motivo" required aria-required="true" aria-describedby="err-motivo" placeholder="Conte um pouquinho do seu objetivo…"></textarea>
+              <span class="error-msg" id="err-motivo">Conte rapidamente o seu motivo.</span>
+            </div>
+
+            <!-- 7. Origem -->
+            <div class="field">
+              <label for="origem">Como você encontrou o meu trabalho? (recomendação, Instagram, etc.) <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="origem" name="origem" required aria-required="true" aria-describedby="err-origem" />
+              <span class="error-msg" id="err-origem">Conte como você me encontrou.</span>
+            </div>
+
+            <button class="btn btn--lg btn--block" type="submit">Enviar pré-inscrição</button>
+          </form>
+
+          <p class="form-alt">
+            Prefere o formulário do Google? <a href="https://forms.gle/FXvgFFuVtUdAfoEP8" target="_blank" rel="noopener">Abrir no Google Forms</a>.<br />
+            Ou fale comigo no <a href="https://wa.me/5541999715742?text=Oi%20Mari!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20aulas." target="_blank" rel="noopener">WhatsApp</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

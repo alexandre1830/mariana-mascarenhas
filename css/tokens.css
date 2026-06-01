@@ -1,0 +1,79 @@
+/* ============================================================
+   TOKENS DE MARCA — Mariana Mascarenhas / Teacher Mari
+   Cores amostradas do material oficial. NÃO inventar outra paleta.
+   ============================================================ */
+
+:root {
+  /* ---- Cores de marca ---- */
+  --roxo-profundo: #4E2782; /* primária: blocos de título, CTA */
+  --roxo-escuro:   #371A5E; /* hover/profundidade */
+  --lilas:         #AC75C8; /* secundária, realces suaves */
+  --magenta:       #9C346D; /* acento quente, palavras-chave, logo */
+  --teal:          #1F8FA0; /* acento frio pontual */
+  --fundo:         #F4F3F4; /* base clara */
+  --fundo-alt:     #EAE8EC; /* faixas alternadas */
+  --tinta:         #181111; /* texto principal */
+  --tinta-suave:   #4A4348; /* texto secundário */
+
+  /* ---- Derivadas (transparências/estados) ---- */
+  --roxo-10:  rgba(78, 39, 130, 0.10);
+  --roxo-16:  rgba(78, 39, 130, 0.16);
+  --magenta-12: rgba(156, 52, 109, 0.12);
+  --teal-12:  rgba(31, 143, 160, 0.12);
+  --branco:   #ffffff;
+  --sombra-suave: 0 2px 8px rgba(24, 17, 17, 0.06);
+  --sombra-media: 0 10px 30px rgba(55, 26, 94, 0.12);
+  --sombra-forte: 0 20px 50px rgba(55, 26, 94, 0.18);
+
+  /* ---- Tipografia ---- */
+  --fonte-display: "Fraunces", "Playfair Display", Georgia, serif;
+  --fonte-corpo: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  /* Escala fluida (clamp) — mobile-first */
+  --fs-eyebrow: clamp(0.72rem, 0.68rem + 0.2vw, 0.82rem);
+  --fs-body:    clamp(1rem, 0.96rem + 0.25vw, 1.125rem);
+  --fs-lead:    clamp(1.12rem, 1.02rem + 0.6vw, 1.38rem);
+  --fs-h4:      clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+  --fs-h3:      clamp(1.35rem, 1.15rem + 1vw, 1.9rem);
+  --fs-h2:      clamp(1.8rem, 1.4rem + 2vw, 3rem);
+  --fs-h1:      clamp(2.3rem, 1.6rem + 3.6vw, 4.5rem);
+  --fs-display: clamp(2.6rem, 1.6rem + 4.6vw, 5.5rem);
+
+  /* ---- Espaçamento ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* ---- Layout ---- */
+  --largura-max: 1200px;
+  --largura-texto: 68ch;
+  --gutter: clamp(1.1rem, 4vw, 2.5rem);
+  --header-h: 72px;
+  --header-h-scroll: 60px;
+
+  /* ---- Raios ---- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* ---- Movimento ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 200ms;
+  --t-base: 320ms;
+  --t-slow: 600ms;
+
+  /* ---- Z-index ---- */
+  --z-header: 100;
+  --z-menu: 120;
+  --z-float: 90;
+}

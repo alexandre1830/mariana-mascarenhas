@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#4E2782" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Plano de estudo">
+  <title>Study Plan — checklist</title>
+  <rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/>
+  <path d="M8.5 9l1.6 1.6L13 7.8" stroke="#9C346D"/>
+  <path d="M8.5 15l1.6 1.6L13 13.8" stroke="#9C346D"/>
+  <path d="M16 9.2h0M16 15.2h0"/>
+</svg>
